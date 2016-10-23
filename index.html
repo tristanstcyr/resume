@@ -1,0 +1,59 @@
+<html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.js"></script>
+    <script src="data.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript">
+        window.onload = function() {
+            var body = document.body;
+            var template = body.innerHTML;
+            var result = Mustache.render(template, data);
+            body.innerHTML = result;
+        }
+    </script>
+</head>
+<body>
+    <div id="outer">
+        <header>
+            <h1>{{subject.full-name}}</h1>
+            <p id="contact-information">{{subject.email}} | {{subject.phone}}<p>
+        </header>
+        <section id="industry-experience">
+            <h1>Industry Experience</h1>
+            {{#industry-experience}}
+            <section>
+                <h1 class="role">{{role}}</h1>
+                <p class="details">{{start-date}} - {{end-date}} | {{institution}} | {{location}}</p>
+                <p class="description">{{description}}</p>
+                <ul class="achivements">
+                    {{#achievements}}
+                    <li>{{.}}</li>
+                    {{/achievements}}
+                </ul>
+            </section>
+            {{/industry-experience}}
+        </section>
+        <section id="education">
+            <h1>Education</h1>
+            {{#education}}
+            <section>
+                <h1 class="formation">{{formation}}</h1>
+                <p class="details">{{start-date}} - {{end-date}} | {{institution}}</p>
+                <p class="note">{{note}}<p>
+            </section>
+            {{/education}}
+        </section>
+        <section id="internships">
+            <h1>Internships</h1>
+            {{#internships}}
+            <section>
+                <h1 class="role">{{role}}</h1>
+                <p class="details">{{start-date}} - {{end-date}} | {{institution}} | {{location}}</p>
+                <p class="description">{{description}}</p>
+            </section>
+            {{/internships}}
+        </section>
+    </div>
+</body>
+</html>
