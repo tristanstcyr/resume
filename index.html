@@ -2,7 +2,7 @@
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.js"></script>
     <script src="data.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic|Roboto:300" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <script type="text/javascript">
         window.onload = function() {
@@ -10,21 +10,29 @@
             var template = body.innerHTML;
             var result = Mustache.render(template, data);
             body.innerHTML = result;
+            setTimeout(() => location.reload(false), 2000);
         }
     </script>
 </head>
 <body>
     <div id="outer">
         <header>
-            <h1>{{subject.full-name}}</h1>
-            <p id="contact-information">{{subject.email}} | {{subject.phone}}<p>
+            <h1>{ {{subject.full-name}} }</h1>
+            <p id="contact-information">
+                <span class="contact-information-item"><span class="icon">&#128231;</span> {{subject.email}}</span>
+                <span class="contact-information-item"><span class="icon link-icon">&#128241;</span> {{subject.phone}}</span>
+            </p>
         </header>
-        <section id="industry-experience">
-            <h1>Industry Experience</h1>
+        <section id="" class="category">
+            <h1>{ About }</h1>
+            <p>{{subject.about}}</p>
+        </section>
+        <section id="industry-experience" class="category">
+            <h1>{ Industry Experience }</h1>
             {{#industry-experience}}
-            <section>
-                <h1 class="role">{{role}}</h1>
-                <p class="details">{{start-date}} - {{end-date}} | {{institution}} | {{location}}</p>
+            <section class="item">
+                <h1 class="role">{{role}} | {{institution}}</h1>
+                <p class="details">{{start-date}} - {{end-date}} | {{location}}</p>
                 <p class="description">{{description}}</p>
                 <ul class="achivements">
                     {{#achievements}}
@@ -34,26 +42,43 @@
             </section>
             {{/industry-experience}}
         </section>
-        <section id="education">
-            <h1>Education</h1>
+        <section id="internships" class="category">
+            <h1>{ Internships }</h1>
+            {{#internships}}
+            <section class="item">
+                <h1 class="role">{{role}}</h1>
+                <p class="details">{{start-date}} - {{end-date}} | {{location}}</p>
+                <p class="description">{{description}}</p>
+                {{#link}}
+                <p class="link">&#128279; {{link}}</p>
+                {{/link}}
+            </section>
+            {{/internships}}
+        </section>
+        <section id="education" class="category">
+            <h1>{ Education }</h1>
             {{#education}}
-            <section>
+            <sectioni class="item"> 
                 <h1 class="formation">{{formation}}</h1>
-                <p class="details">{{start-date}} - {{end-date}} | {{institution}}</p>
+                <p class="details">{{start-date}} - {{end-date}} | {{location}}</p>
                 <p class="note">{{note}}<p>
             </section>
             {{/education}}
         </section>
-        <section id="internships">
-            <h1>Internships</h1>
-            {{#internships}}
-            <section>
-                <h1 class="role">{{role}}</h1>
-                <p class="details">{{start-date}} - {{end-date}} | {{institution}} | {{location}}</p>
-                <p class="description">{{description}}</p>
+        <section id="patents" class="category">
+            <h1>{ Patents }</h1>
+            {{#patents}}
+            <section class="item">
+                <h1>{{title}}</h1>
+                <p>{{publication-date}} | {{publication-number}}</p>
             </section>
-            {{/internships}}
+            {{/patents}}
         </section>
+        <div id="footer">
+            {{#links}}
+            <span class="link">&#128279; {{.}}</span>
+            {{/links}}
+        </div>
     </div>
 </body>
 </html>

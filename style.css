@@ -1,17 +1,119 @@
+h1 {
+    font-family: 'Source Sans Pro', serif;
+    margin:0 0 0 0;
+}
+
+p {
+    margin:0 0 0 0;
+}
+
 * {
-    font-family: 'Fira Sans', sans-serif;
+    font-family:'Roboto', sans-serif;
+    color:rgb(30, 30, 30);
+    font-size:11pt;
+}
+
+header > h1 {
+    font-size:28pt;
+    padding:0 0 7px 0;
+    margin:20px 0px 10px 0px;
+    border-bottom:solid 1px #AAA
+}
+
+header {
+    margin-bottom:30px
+}
+
+.category {
+    margin-top:20px;
+}
+
+.category > h1, .about > h1 {
+    font-size: 20pt;
+}
+
+.item > h1 {
+    font-size: 14pt;
+    margin-top:10px;
+}
+
+.item > .details {
+    color:rgb(85, 85, 85);
+    margin:5px 0 5px 0;
+}
+
+.item > .link {
+    margin-top:10px;
+    font-size:10pt;
+}
+
+.item ul {
+    list-style: square outside none;
+    margin-left:-20px;
+}
+
+.item li {
+    margin-top:5px;
+}
+
+h1 {
+    
+    font-family: 'Source Sans Pro', Sans-serif;
+    font-weight:500;
+}
+
+.footer {
+    margin-top:20px;
+}
+
+.link-icon {
+    position:relative;
+    top:-2px;
+}
+
+header .icon {
+    padding-right:2.5px;
+}
+
+.contact-information-item {
+    padding-left:12px;
+}
+
+#about p {
+    margin-top:10px;
+}
+
+#contact-information {
+    float:right;
+    margin-top:0px;
+}
+
+#footer {
+    position:absolute;
+    bottom:0px;
+    border-top:solid 1px #AAA;
+    margin-bottom:30px;
+    width:21.59cm;
+    padding-top:10px;
+}
+
+#outer {
+    position:relative;
+}
+
+#outer {
+    margin:auto;
+    width:21.59cm;
+    height:31.00cm;
+    background-color:white;
 }
 
 @media screen {
     body {
-        background-color:black;
+        background-color:rgb(45, 45, 45);
     }
-
     #outer {
-        margin:auto;
-        max-width:21.59cm;
-        min-height:27.94cm;
-        background-color:white;
-        padding: 30px;
+        box-shadow: 0px 0px 10px 2px #000000;
+        padding: 1.91cm;
     }
 }
