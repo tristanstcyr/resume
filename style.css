@@ -4,7 +4,9 @@ h1 {
 }
 
 p {
-    margin:0 0 0 0;
+    margin:0px;
+    margin-top:5px;
+    line-height:135%
 }
 
 * {
@@ -16,23 +18,23 @@ p {
 header > h1 {
     font-size:28pt;
     padding:0 0 7px 0;
-    margin:20px 0px 10px 0px;
+    margin:0px 0px 10px 0px;
     border-bottom:solid 1px #AAA
 }
 
 header {
-    margin-bottom:30px
+    margin-bottom:40px;
 }
 
 .category {
-    margin-top:20px;
+    margin-top:10px;
 }
 
 .category > h1, .about > h1 {
     font-size: 20pt;
 }
 
-.item > h1 {
+.item h1 {
     font-size: 14pt;
     margin-top:10px;
 }

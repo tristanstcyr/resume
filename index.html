@@ -10,7 +10,7 @@
             var template = body.innerHTML;
             var result = Mustache.render(template, data);
             body.innerHTML = result;
-            setTimeout(() => location.reload(false), 2000);
+            //setTimeout(() => location.reload(false), 2000);
         }
     </script>
 </head>
@@ -21,20 +21,23 @@
             <p id="contact-information">
                 <span class="contact-information-item"><span class="icon">&#128231;</span> {{subject.email}}</span>
                 <span class="contact-information-item"><span class="icon link-icon">&#128241;</span> {{subject.phone}}</span>
+                <span class="contact-information-item"><span class="icon">&#128279;</span> https://www.linkedin.com/in/tristanstcyr</span>
             </p>
         </header>
-        <section id="" class="category">
+        <section id="about" class="category">
             <h1>{ About }</h1>
-            <p>{{subject.about}}</p>
+            <p>{{subject.description}}</p>
+            <p>Skill highlights: {{subject.skill-highlights}}</p>
         </section>
         <section id="industry-experience" class="category">
             <h1>{ Industry Experience }</h1>
             {{#industry-experience}}
-            <section class="item">
-                <h1 class="role">{{role}} | {{institution}}</h1>
-                <p class="details">{{start-date}} - {{end-date}} | {{location}}</p>
-                <p class="description">{{description}}</p>
-                <ul class="achivements">
+            <section class="item" style="">
+                    <h1 class="role">{{role}} | {{institution}}</h1>
+                    <p class="details">{{start-date}} - {{end-date}} | {{location}}</p>
+                    <p class="description">{{description}}</p>
+                    <p>Technologies: {{technologies}}</p>
+                <ul class="achievements" style="">
                     {{#achievements}}
                     <li>{{.}}</li>
                     {{/achievements}}
@@ -46,12 +49,9 @@
             <h1>{ Internships }</h1>
             {{#internships}}
             <section class="item">
-                <h1 class="role">{{role}}</h1>
+                <h1 class="role">{{role}} | {{institution}}</h1>
                 <p class="details">{{start-date}} - {{end-date}} | {{location}}</p>
                 <p class="description">{{description}}</p>
-                {{#link}}
-                <p class="link">&#128279; {{link}}</p>
-                {{/link}}
             </section>
             {{/internships}}
         </section>
@@ -59,26 +59,17 @@
             <h1>{ Education }</h1>
             {{#education}}
             <sectioni class="item"> 
-                <h1 class="formation">{{formation}}</h1>
+                <h1 class="formation">{{formation}} | {{institution}}</h1>
                 <p class="details">{{start-date}} - {{end-date}} | {{location}}</p>
                 <p class="note">{{note}}<p>
             </section>
             {{/education}}
         </section>
-        <section id="patents" class="category">
-            <h1>{ Patents }</h1>
-            {{#patents}}
-            <section class="item">
-                <h1>{{title}}</h1>
-                <p>{{publication-date}} | {{publication-number}}</p>
-            </section>
-            {{/patents}}
-        </section>
-        <div id="footer">
-            {{#links}}
-            <span class="link">&#128279; {{.}}</span>
-            {{/links}}
-        </div>
+        <section id="other" class="category">
+            <h1>{ Other }</h1>
+            <p><b>Patent:</b> Constructing Queries for Execution Over Multi-Dimensional Data Structures - 20150178407
+            <p><b>Languages:</b> {{subject.languages-spoken}}</p>
+       </section>
     </div>
 </body>
 </html>

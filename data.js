@@ -3,20 +3,26 @@ var data = {
         "full-name" : "Tristan St-Cyr",
         "email" : "tristan.stcyr@gmail.com",
         "phone" : "425-224-5268",
-        "about" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut facilisis tincidunt tortor, non feugiat mauris euismod id. Phasellus eleifend, sem sed dictum lobortis, eros urna mollis ex, quis sagittis lacus tortor nec dui. Integer molestie leo ante, quis laoreet metus faucibus non. Vestibulum laoreet fringilla sapien, ultrices vehicula erat tempor in."
+        "description" : "Highly self-motivated software engineer looking for next adventure. Experienced with query translation and connectivity to many data sources. Quick learner. Enjoys approaching problems end-to-end. Exposed to many programming languages, platforms, operating systems. Interested in a variety of project domains and technologies.",
+        "languages-spoken" : "Professionally fluent in English and French",
+        "skill-highlights" : "Agile, C#, .NET, MSBuild, SQL, SQL Server, Windows, Power BI, WiX, Java, Web, API Design, Query Pipelines."
+        
     },
     "industry-experience" : [ {
             "role" : "Senior Software Engineer",
             "start-date" : "September 2011",
             "end-date" : "Present",
-            "location" : "Redmond, WA, USA",
+            "location" : "Redmond, Washington",
             "institution" : "Microsoft",
-            "description" : "Developer on a distributed query engine used in several Microsoft products including Excel, Power BI, Azure ML, Azure Data Factory, and more.",
+            "technologies" : "C#, M, .NET, Visual Studio 2015, MSBuild, Windows, WiX.",
+            "description" : "Developer on a distributed query engine integrated in several Microsoft products such as Excel 2016 and Power BI.",
             "achievements" : [
-                "End-to-end development and major contributions to several data import features: ODBC, ADO.NET, OLE DB, SAP HANA, SAP Business Objects, Microsoft Analysis Services, Active Directory, Google Analytics, Lithium, Snowflake, Amazon Redshift, and more.",
-                "Developed Windows installer using WIX toolkit for Power Query.",
-                "Participated in mentoring junior coworkers and interviewing candidates.",
-                "Ensured that security requirements were met."
+                "End-to-end development and contributions to many data import features including: ODBC, ADO.NET, OLE DB, SAP HANA, SAP Business Objects, Microsoft Analysis Services, Active Directory, Google Analytics, Lithium, Snowflake, Amazon Redshift.",
+                "Translation to several query languages and APIs.",
+                "Promoted every year and identified as a high-potential employee.",
+                "Ensured product security requirements were met for every release.",
+                "Mentored junior coworkers and interviewed candidates.",
+                "Developed Windows installer using WIX toolkit for Power Query."
             ]
         }    ],
     "education" : [
@@ -27,14 +33,14 @@ var data = {
            "start-date" : "2007",
            "end-date" : "2011",
            "note" : "Graduated with distinction"
-        }, {
+        }/*, {
             "institution" : "Conrodia University",
             "location" : "Montreal, QC, CA",
             "formation" : "Bachelor of Fine Arts, Design Arts",
             "start-date" : "2004",
             "end-date" : "2006",
             "note" : "Completed 45 out of 60 credits"
-        }
+        }*/
     ],
     "internships" : [
         {
