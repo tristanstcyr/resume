@@ -1,11 +1,12 @@
 var data = {
     "subject" : {
         "full-name" : "Tristan St-Cyr",
+        "expertise" : "Software Engineer",
         "email" : "tristan.stcyr@gmail.com",
         "phone" : "425-224-5268",
-        "description" : "Highly self-motivated software engineer looking for next adventure. Experienced with query translation and connectivity to many data sources. Quick learner. Enjoys approaching problems end-to-end. Exposed to many programming languages, platforms, operating systems. Interested in a variety of project domains and technologies.",
-        "languages-spoken" : "Professionally fluent in English and French",
-        "skill-highlights" : "Agile, C#, .NET, MSBuild, SQL, SQL Server, Windows, Power BI, WiX, Java, Web, API Design, Query Pipelines."
+        "description" : "Self-motivated software engineer looking for new challenges. Enjoys solving problems end-to-end. Interested in a variety of project domains and technologies.",
+        "languages-spoken" : "Professionally fluent in English and French.",
+        "skill-highlights" : "C#, Functional Programming, MSBuild, SQL Server, Windows, Power BI, Web, API Design, Query Pipelines."
         
     },
     "industry-experience" : [ {
@@ -17,12 +18,13 @@ var data = {
             "technologies" : "C#, M, .NET, Visual Studio 2015, MSBuild, Windows, WiX.",
             "description" : "Developer on a distributed query engine integrated in several Microsoft products such as Excel 2016 and Power BI.",
             "achievements" : [
-                "End-to-end development and contributions to many data import features including: ODBC, ADO.NET, OLE DB, SAP HANA, SAP Business Objects, Microsoft Analysis Services, Active Directory, Google Analytics, Lithium, Snowflake, Amazon Redshift.",
-                "Translation to several query languages and APIs.",
-                "Promoted every year and identified as a high-potential employee.",
-                "Ensured product security requirements were met for every release.",
-                "Mentored junior coworkers and interviewed candidates.",
-                "Developed Windows installer using WIX toolkit for Power Query."
+                "Development and major contributions to many data import features including: ODBC, ADO.NET, OLE DB, SAP HANA, SAP Business Objects, Microsoft Analysis Services, Active Directory, Google Analytics, Lithium, Snowflake, Amazon Redshift.",
+                "End-to-end development of features including: Requirements gathering, UI design, API design and implementation, testing.",
+                "Implemented query translation to different dialects of SQL and other query languages.",
+                "Developed Windows installer using WiX toolkit for Power Query.",
+                "Ensured product security requirements were met at every feature and product release.",
+                "Received promotion every year and identified as high-potential employee.",
+                "Mentored junior coworkers and interviewed candidates."
             ]
         }    ],
     "education" : [
@@ -32,7 +34,7 @@ var data = {
            "formation" : "Bachelor of Engineering, Software Engineering",
            "start-date" : "2007",
            "end-date" : "2011",
-           "note" : "Graduated with distinction"
+           "note" : "Graduated with distinction."
         }/*, {
             "institution" : "Conrodia University",
             "location" : "Montreal, QC, CA",
@@ -50,7 +52,7 @@ var data = {
             "start-date" : "May 2010",
             "end-date" : "July 2010",
             "institution" : "Microsoft",
-            "description" : "Developed data model and database loader for .NET PDB files."
+            "description" : "Developed data model and database loader for .NET PDB files for Oslo repository."
         }, {
             "role" : "Research Intern",
             "location" : "Montreal, Quebec",
@@ -58,7 +60,7 @@ var data = {
             "start-date" : "May 2009",
             "end-date" : "August 2009",
             "institution" : "Concordia University",
-            "description" : "Integration of Java Modeling Language, Eclipse, and Microsoft Boogie into an Eclipse plugin.",
+            "description" : "Integration of Java Modeling Language (JML), Eclipse, and Microsoft Boogie into an Eclipse plugin.",
             "link" : "https://sourceforge.net/p/jmlspecs/wiki/JML4/"
         }, {
             "role" : "Engineer Intern",
@@ -67,7 +69,7 @@ var data = {
             "start-date" : "September 2008",
             "end-date" : "December 2008",
             "institution" : "CAE",
-            "description" : "Development on helicopter heads-up display."
+            "description": "Development on helicopter heads-up display for brownout avoidance."
         }
     ],
     "links" : [

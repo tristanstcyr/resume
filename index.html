@@ -2,7 +2,7 @@
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.js"></script>
     <script src="data.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic|Roboto:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,400italic|Roboto:300" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <script type="text/javascript">
         window.onload = function() {
@@ -17,7 +17,9 @@
 <body>
     <div id="outer">
         <header>
-            <h1>{ {{subject.full-name}} }</h1>
+            <div id="header-top">
+                <h1>{ {{subject.full-name}} }</h1>
+            </div>
             <p id="contact-information">
                 <span class="contact-information-item"><span class="icon">&#128231;</span> {{subject.email}}</span>
                 <span class="contact-information-item"><span class="icon link-icon">&#128241;</span> {{subject.phone}}</span>
@@ -67,8 +69,10 @@
         </section>
         <section id="other" class="category">
             <h1>{ Other }</h1>
-            <p><b>Patent:</b> Constructing Queries for Execution Over Multi-Dimensional Data Structures - 20150178407
-            <p><b>Languages:</b> {{subject.languages-spoken}}</p>
+            <p>Patent: Constructing Queries for Execution Over Multi-Dimensional Data Structures | 20150178407 | June
+            2015 </p>
+            <p>Natural languages: {{subject.languages-spoken}}</p>
+            <p>Source for this resume can be found on GitHub: https://github.com/tristanstcyr.</p>
        </section>
     </div>
 </body>

@@ -1,9 +1,10 @@
 h1 {
-    font-family: 'Source Sans Pro', serif;
+    font-family: 'Source Sans Pro', Sans-serif;
     margin:0 0 0 0;
+    font-weight:500;
 }
 
-p {
+p, ul {
     margin:0px;
     margin-top:5px;
     line-height:135%
@@ -15,32 +16,43 @@ p {
     font-size:11pt;
 }
 
-header > h1 {
-    font-size:28pt;
-    padding:0 0 7px 0;
-    margin:0px 0px 10px 0px;
-    border-bottom:solid 1px #AAA
+#header-top {
+    border-bottom:solid 1px #AAA;
+    margin:0;
+    padding-bottom:3px;
+    margin-bottom:5px;
+    vertical-align:middle;
+    max-height:60px;
+    overflow:hidden;
+
+}
+
+header  h1 {
+    display:inline;
+    font-size:36pt;
+    padding:0px 0 7px 0;
 }
 
 header {
-    margin-bottom:40px;
+    margin-top:-10px;
+    margin-bottom:30px;
 }
 
 .category {
-    margin-top:10px;
+    margin-top:15px;
 }
 
 .category > h1, .about > h1 {
-    font-size: 20pt;
+    font-size: 18pt;
+    font-weight:600;
 }
 
 .item h1 {
     font-size: 14pt;
-    margin-top:10px;
+    margin-top:7px;
 }
 
 .item > .details {
-    color:rgb(85, 85, 85);
     margin:5px 0 5px 0;
 }
 
@@ -51,17 +63,14 @@ header {
 
 .item ul {
     list-style: square outside none;
-    margin-left:-20px;
+    margin-left:0;
+    padding-left:0;
 }
 
 .item li {
     margin-top:5px;
-}
-
-h1 {
-    
-    font-family: 'Source Sans Pro', Sans-serif;
-    font-weight:500;
+    padding-left:0px;
+    margin-left:20px;
 }
 
 .footer {
@@ -81,10 +90,6 @@ header .icon {
     padding-left:12px;
 }
 
-#about p {
-    margin-top:10px;
-}
-
 #contact-information {
     float:right;
     margin-top:0px;
@@ -101,12 +106,9 @@ header .icon {
 
 #outer {
     position:relative;
-}
-
-#outer {
     margin:auto;
     width:21.59cm;
-    height:31.00cm;
+    height:28.00cm;
     background-color:white;
 }
 
