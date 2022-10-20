@@ -4,27 +4,44 @@ var data = {
         "expertise" : "Software Engineer",
         "email" : "tristan.stcyr@gmail.com",
         "phone" : "425-224-5268",
-        "description" : "Self-motivated software engineer looking for new challenges. Enjoys solving problems end-to-end. Interested in a variety of project domains and technologies.",
-        "languages-spoken" : "Professionally fluent in English and French.",
-        "skill-highlights" : "C#, Functional Programming, MSBuild, SQL Server, Windows, Power BI, Web, API Design, Query Pipelines."
+        "location": "Raleigh, North Carolina",
+        "url": "https://www.linkedin.com/in/tristanstcyr",
+        "description" : "Experienced Software Engineer looking for new challenges. Enjoys learning new technologies, solving problems end-to-end, full-stack development, team work, and remaing hands-on. Interested in projects with positive human or environmental impact. Mission-focused and open to working remote, hybrid or on-site.",
+        "languages-spoken" : "Professionally fluent in English and French",
+        "skill-highlights" : "Web application development, team leadership, design and architecture, backend and frontend"
         
     },
-    "industry-experience" : [ {
+    "industry-experience" : [{
+            "role": "Principal Software Engineer",
+            "start-date": "Jan 2016",
+            "end-date": "Sep 2022",
+            "location": "Seattle, WA"  ,
+            "institution": "Qualtrics International Inc.",
+            "technologies": "Team leadership, Architecture, API Design, profiling, Typescript, Webpack, NodeJS, Scala, MonngoDB",
+            "description": "Contributor, lead and architect on the Reporting Platform",
+            "achievements": [
+              "Team lead and contributor on improving reporting application performance (2021-2022)",
+              "Team lead and contributor on extensibility framework for customer-facing reporting applications (2017-2020)",
+              "Design and implementation of data pipeline for reporting on survey distribution (2016)",
+              "Lead yearly collaborative effort to identify long-term reporting product architecture",
+              "Interviewed 200+ candidates for multiple roles: SDE, SM, PM, TPM, SDET, QE",
+              "Member of promotion committees",
+              "Mentoring and help with career development"
+            ]
+    }, {
             "role" : "Senior Software Engineer",
-            "start-date" : "September 2011",
-            "end-date" : "Present",
-            "location" : "Redmond, Washington",
-            "institution" : "Microsoft",
-            "technologies" : "C#, M, .NET, Visual Studio 2015, MSBuild, Windows, WiX.",
+            "start-date" : "Sep 2011",
+            "end-date" : "Dec 2015",
+            "location" : "Redmond, WA",
+            "institution" : "Microsoft Corporation",
+            "technologies" : "C#, .NET, M, Visual Studio, MSBuild, WiX, Windows",
             "description" : "Developer on a distributed query engine integrated in several Microsoft products such as Excel 2016 and Power BI.",
             "achievements" : [
-                "Development and major contributions to many data import features including: ODBC, ADO.NET, OLE DB, SAP HANA, SAP Business Objects, Microsoft Analysis Services, Active Directory, Google Analytics, Lithium, Snowflake, Amazon Redshift.",
-                "End-to-end development of features including: Requirements gathering, UI design, API design and implementation, testing.",
-                "Implemented query translation to different dialects of SQL and other query languages.",
-                "Developed Windows installer using WiX toolkit for Power Query.",
-                "Ensured product security requirements were met at every feature and product release.",
-                "Received promotion every year and identified as high-potential employee.",
-                "Mentored junior coworkers and interviewed candidates."
+                "End-to-end development of data import features: ODBC, ADO.NET, OLE DB, SAP HANA, SAP Business Objects, Microsoft Analysis Services, Active Directory, Google Analytics, Lithium, Snowflake, Amazon Redshift",
+                "Implemented query translation to different dialects of SQL and other query languages",
+                "Developed Windows installer using WiX toolkit for Power Query",
+                "Team security champion",
+                "Mentoring and interviewing"
             ]
         }    ],
     "education" : [
@@ -34,21 +51,14 @@ var data = {
            "formation" : "Bachelor of Engineering, Software Engineering",
            "start-date" : "2007",
            "end-date" : "2011",
-           "note" : "Graduated with distinction."
-        }/*, {
-            "institution" : "Conrodia University",
-            "location" : "Montreal, QC, CA",
-            "formation" : "Bachelor of Fine Arts, Design Arts",
-            "start-date" : "2004",
-            "end-date" : "2006",
-            "note" : "Completed 45 out of 60 credits"
-        }*/
+           "note" : "Graduated with distinction"
+        }
     ],
     "internships" : [
         {
             "role" : "Software Development Engineer Intern",
             "technologies" : "C#, Visual Studio 2010, CLR/IL",
-            "location" : "Redmond, Washington",
+            "location" : "Redmond, WA",
             "start-date" : "May 2010",
             "end-date" : "July 2010",
             "institution" : "Microsoft",

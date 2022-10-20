@@ -1,7 +1,7 @@
 h1 {
     font-family: 'Source Sans Pro', Sans-serif;
     margin:0 0 0 0;
-    font-weight:500;
+    font-weight:600;
 }
 
 p, ul {
@@ -19,41 +19,39 @@ p, ul {
 #header-top {
     border-bottom:solid 1px #AAA;
     margin:0;
-    padding-bottom:3px;
+    padding-bottom:10px;
     margin-bottom:5px;
     vertical-align:middle;
-    max-height:60px;
     overflow:hidden;
 
 }
 
 header  h1 {
     display:inline;
-    font-size:36pt;
-    padding:0px 0 7px 0;
+    font-size:38pt;
 }
 
 header {
     margin-top:-10px;
-    margin-bottom:30px;
+    margin-bottom:10px;
 }
-
-.category {
-    margin-top:15px;
-}
-
 .category > h1, .about > h1 {
-    font-size: 18pt;
+    font-size: 22pt;
     font-weight:600;
+}
+
+.item {
+	margin-top: 12px
 }
 
 .item h1 {
     font-size: 14pt;
-    margin-top:7px;
+		display: inline;
 }
 
 .item > .details {
-    margin:5px 0 5px 0;
+		margin-top: 5px;
+		float: right;
 }
 
 .item > .link {
@@ -86,13 +84,12 @@ header .icon {
     padding-right:2.5px;
 }
 
-.contact-information-item {
-    padding-left:12px;
+#contact-information {
+    margin-top:0px;
 }
 
-#contact-information {
-    float:right;
-    margin-top:0px;
+.contact-information-item {
+    margin-right:9px;
 }
 
 #footer {
@@ -120,4 +117,20 @@ header .icon {
         box-shadow: 0px 0px 10px 2px #000000;
         padding: 1.91cm;
     }
+}
+
+a:link {
+	text-decoration: none
+}
+
+a:hover {
+	text-decoration: underline
+}
+
+section {
+	margin-top: 20px
+}
+
+#other > h1 {
+	margin-bottom: 10px
 }
