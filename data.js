@@ -4,7 +4,7 @@ var data = {
         "expertise" : "Software Engineer",
         "email" : "tristan.stcyr@gmail.com",
         "phone" : "425-224-5268",
-        "location": "Raleigh, North Carolina",
+        "location": "Raleigh, NC",
         "url": "https://www.linkedin.com/in/tristanstcyr",
         "description" : "Experienced Software Engineer looking for new challenges. Enjoys learning new technologies, solving problems end-to-end, full-stack development, team work, and remaing hands-on. Interested in projects with positive human or environmental impact. Mission-focused and open to working remote, hybrid or on-site.",
         "languages-spoken" : "Professionally fluent in English and French",
