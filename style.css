@@ -1,117 +1,119 @@
 h1 {
     font-family: 'Source Sans Pro', Sans-serif;
-    margin:0 0 0 0;
-    font-weight:600;
+    margin: 0 0 0 0;
+    font-weight: 600;
 }
 
 p, ul {
-    margin:0px;
-    margin-top:5px;
-    line-height:135%
+    margin: 0px;
+    margin-top: 5px;
+    line-height: 135%
 }
 
 * {
-    font-family:'Roboto', sans-serif;
-    color:rgb(30, 30, 30);
-    font-size:11pt;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(30, 30, 30);
+    font-size: 11pt;
 }
 
 #header-top {
-    border-bottom:solid 1px #AAA;
-    margin:0;
-    padding-bottom:10px;
-    margin-bottom:5px;
-    vertical-align:middle;
-    overflow:hidden;
+    border-bottom: solid 1px #AAA;
+    margin: 0;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    overflow: hidden;
 
 }
 
 header  h1 {
-    display:inline;
-    font-size:38pt;
+    display: inline;
+    font-size: 38pt;
 }
 
 header {
-    margin-top:-10px;
-    margin-bottom:10px;
+    margin-top: -10px;
+    margin-bottom: 10px;
 }
 .category > h1, .about > h1 {
     font-size: 22pt;
-    font-weight:600;
+    font-weight: 600;
 }
 
 .item {
-	margin-top: 12px
+  margin-top: 12px
 }
 
 .item h1 {
     font-size: 14pt;
-		display: inline;
+    display: inline;
 }
 
 .item > .details {
-		margin-top: 5px;
-		float: right;
+    margin-top: 5px;
+    float: right;
 }
 
 .item > .link {
-    margin-top:10px;
-    font-size:10pt;
+    margin-top: 10px;
+    font-size: 10pt;
 }
 
-.item ul {
+ul {
     list-style: square outside none;
-    margin-left:0;
-    padding-left:0;
+    margin-left: 0;
+    padding-left: 0;
 }
 
-.item li {
-    margin-top:5px;
-    padding-left:0px;
-    margin-left:20px;
+li {
+    margin-top: 5px;
+    padding-left: 0px;
+    margin-left: 20px;
 }
 
 .footer {
-    margin-top:20px;
+    margin-top: 20px;
 }
 
 .link-icon {
-    position:relative;
-    top:-2px;
+    position: relative;
+    top: -2px;
 }
 
 header .icon {
-    padding-right:2.5px;
+    padding-right: 2.5px;
 }
 
 #contact-information {
-    margin-top:0px;
+    margin-top: 10px;
 }
 
 .contact-information-item {
-    margin-right:9px;
+    margin-right: 9px;
 }
 
 #footer {
-    position:absolute;
-    bottom:0px;
-    border-top:solid 1px #AAA;
-    margin-bottom:30px;
-    width:21.59cm;
-    padding-top:10px;
+    position: absolute;
+    bottom: 0px;
+    border-top: solid 1px #AAA;
+    margin-bottom: 30px;
+    padding-top: 10px;
 }
 
 #outer {
     position:relative;
-    margin:auto;
-    width:21.59cm;
-    height:28.00cm;
-    background-color:white;
+    margin: auto;
+    width: 8.5in;
+    height: 11in;
+    padding-top: .5in;
+    padding-right: .5in;
+    padding-left: .5in;
+    background-color: white;
 }
 
 @media screen {
     body {
-        background-color:rgb(45, 45, 45);
+        background-color: rgb(45, 45, 45);
     }
     #outer {
         box-shadow: 0px 0px 10px 2px #000000;
@@ -120,17 +122,48 @@ header .icon {
 }
 
 a:link {
-	text-decoration: none
+  text-decoration: none
 }
 
 a:hover {
-	text-decoration: underline
+  text-decoration: underline
 }
 
 section {
-	margin-top: 20px
+  margin-top: 20px
 }
 
 #other > h1 {
-	margin-bottom: 10px
+  margin-bottom: 10px
+}
+
+#description {
+  line-height: 1.5em;
+}
+
+#skill-highlight {
+  margin-top: 10px
+}
+
+#profession {
+  font-family: 'Source Sans Pro', Sans-serif;
+  color: #D1D1D1;
+  font-style: bold;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+
+@media print {
+  @page {
+    margin: 0;
+  }
+
+  @page :footer {
+      display: none
+  }
+
+  @page :header {
+      display: none
+  }
 }

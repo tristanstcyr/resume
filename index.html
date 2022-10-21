@@ -17,19 +17,19 @@
     <div id="outer">
         <header>
             <div id="header-top">
-                <h1>{ {{subject.full-name}} }</h1>
+              <h1>{ {{subject.full-name}} }<span id="profession">.SOFTWARE ENGINEER</span></h1>
             </div>
             <p id="contact-information">
-            <span class="contact-information-item"><span class="icon">&#128279;</span> <a href="{{subject.url}}">{{subject.url}}</a></span>
-            <span class="contact-information-item"><span class="icon">&#128231;</span> <a href="mailto:{{subject.email}}">{{subject.email}}</a></span>
-                <span class="contact-information-item"><span class="icon link-icon">&#128241;</span> {{subject.phone}}</span>
-                <span class="contact-information-item"><span class="icon">&#127758;</span> {{subject.location}}</span>
+              <span class="contact-information-item"><span class="icon">&#128279;</span> <a href="{{subject.url}}">{{subject.url}}</a></span>
+              <span class="contact-information-item"><span class="icon">&#128231;</span> <a href="mailto:{{subject.email}}">{{subject.email}}</a></span>
+              <span class="contact-information-item"><span class="icon link-icon">&#128241;</span> {{subject.phone}}</span>
+              <span class="contact-information-item"><span class="icon">&#127758;</span> {{subject.location}}</span>
             </p>
         </header>
         <section id="about" class="category">
           <h1>{ About }</h1>
             <p id="description">{{subject.description}}</p>
-            <p>Skill highlights: {{subject.skill-highlights}}</p>
+            <p id="skill-highlight">Skill highlights: {{subject.skill-highlights}}</p>
         </section>
         <section id="industry-experience" class="category">
             <h1>{ Industry Experience }</h1>
@@ -37,8 +37,8 @@
             <section class="item">
                     <h1 class="role"># {{role}} | {{institution}}</h1>
                     <p class="details">{{start-date}} - {{end-date}} | {{location}}</p>
-                    <p class="description">{{description}}</p>
-                    <p class="technologies"><span class="icon"></span>{{technologies}}</p>
+                    <!-- <p class="description">{{description}}</p> -->
+                    <p class="technologies"><span class="icon"></span>Tech: {{technologies}}</p>
                 <ul class="achievements" style="">
                     {{#achievements}}
                     <li>{{.}}</li>
@@ -71,9 +71,11 @@
         </section>
         <section id="other" class="category">
             <h1>{ Other }</h1>
-            <p>Natural languages: {{subject.languages-spoken}}</p>
-            <p>Patent: Constructing Queries for Execution Over Multi-Dimensional Data Structures | 20150178407 | June 2015 </p>
-            <p>This resume can be found on GitHub: <a href="https://tristanstcyr.github.io/resume/">https://tristanstcyr.github.io/resume/</a></p>
+            <ul>
+              {{#other}}
+              <li>{{{.}}}</li>
+              {{/other}}
+            </ul>
        </section>
     </div>
 </body>

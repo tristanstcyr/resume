@@ -6,9 +6,8 @@ var data = {
         "phone" : "425-224-5268",
         "location": "Raleigh, NC",
         "url": "https://www.linkedin.com/in/tristanstcyr",
-        "description" : "Experienced Software Engineer looking for new challenges. Enjoys learning new technologies, solving problems end-to-end, full-stack development, team work, and remaing hands-on. Interested in projects with positive human or environmental impact. Mission-focused and open to working remote, hybrid or on-site.",
-        "languages-spoken" : "Professionally fluent in English and French",
-        "skill-highlights" : "Web application development, team leadership, design and architecture, backend and frontend"
+        "description" : "Experienced Software Engineer looking for new challenges. I enjoy learning new technologies, tackling problems end-to-end, full-stack development, and teamwork. I'm interested in innovative projects with positive human or environmental impact. Mission-focused and open to working remote, hybrid or on-site.",
+        "skill-highlights" : "Web app development, Business Intelligence, team leadership, design and architecture, frontend and backend"
         
     },
     "industry-experience" : [{
@@ -17,16 +16,17 @@ var data = {
             "end-date": "Sep 2022",
             "location": "Seattle, WA"  ,
             "institution": "Qualtrics International Inc.",
-            "technologies": "Team leadership, Architecture, API Design, profiling, Typescript, Webpack, NodeJS, Scala, MonngoDB",
+            "technologies": "Typescript, React, AngularJS, Webpack, NodeJS, Scala, MongoDB, Amazon SQS, Rabbit MQ, Docker, Linux",
             "description": "Contributor, lead and architect on the Reporting Platform",
             "achievements": [
-              "Team lead and contributor on improving reporting application performance (2021-2022)",
-              "Team lead and contributor on extensibility framework for customer-facing reporting applications (2017-2020)",
-              "Design and implementation of data pipeline for reporting on survey distribution (2016)",
-              "Lead yearly collaborative effort to identify long-term reporting product architecture",
+              "Team lead and contributor on end-to-end multi-disciplinary effort to improve web application performance (2021-2022)",
+              "Team lead and contributor on framework for extending customer-facing reporting applications (2017-2020)",
+              "Designed and implemented of multi-cluster ingestion to ElasticSearch with Apache Spark (2016-2017)",
+              "Designed and implemented of data pipeline for reporting on survey distributions (2016)",
+              "Led yearly collaborative effort to identify long-term reporting organization architecture and tech standardization",
+              "On-call and conducted incident Root Cause Analysis",
               "Interviewed 200+ candidates for multiple roles: SDE, SM, PM, TPM, SDET, QE",
-              "Member of promotion committees",
-              "Mentoring and help with career development"
+              "Mentoring, quarterly planning, and member of promotion committees"
             ]
     }, {
             "role" : "Senior Software Engineer",
@@ -34,11 +34,12 @@ var data = {
             "end-date" : "Dec 2015",
             "location" : "Redmond, WA",
             "institution" : "Microsoft Corporation",
-            "technologies" : "C#, .NET, M, Visual Studio, MSBuild, WiX, Windows",
+            "technologies" : "C#, .NET, M, MSBuild, WiX, SQL, SQL Server, Windows",
             "description" : "Developer on a distributed query engine integrated in several Microsoft products such as Excel 2016 and Power BI.",
             "achievements" : [
-                "End-to-end development of data import features: ODBC, ADO.NET, OLE DB, SAP HANA, SAP Business Objects, Microsoft Analysis Services, Active Directory, Google Analytics, Lithium, Snowflake, Amazon Redshift",
+                "Designed and implemented data import features: ODBC, ADO.NET, OLE DB, SAP HANA, SAP Business Objects, Microsoft Analysis Services, Active Directory, Google Analytics, Lithium, Snowflake, Amazon Redshift",
                 "Implemented query translation to different dialects of SQL and other query languages",
+                "Implemented various distributed query processing features",
                 "Developed Windows installer using WiX toolkit for Power Query",
                 "Team security champion",
                 "Mentoring and interviewing"
@@ -68,7 +69,7 @@ var data = {
             "location" : "Montreal, Quebec",
             "technologies" : "Java, Eclipse, Eclipse Java Development Tools (JDT)",
             "start-date" : "May 2009",
-            "end-date" : "August 2009",
+            "end-date" : "Aug 2009",
             "institution" : "Concordia University",
             "description" : "Integration of Java Modeling Language (JML), Eclipse, and Microsoft Boogie into an Eclipse plugin.",
             "link" : "https://sourceforge.net/p/jmlspecs/wiki/JML4/"
@@ -88,7 +89,12 @@ var data = {
     ],
     "patents" : {
         "title" : "Constructing Queries for Execution Over Multi-Dimensional Data Structures",
-        "publication-date" : "June 2015",
+        "publication-date" : "Jun 2015",
         "publication-number" : "20150178407"
-    }
+    },
+   "other": [
+        "Patent: <a href=\"https://patents.google.com/patent/US9619581B2/\">Constructing Queries for Execution Over Multi-Dimensional Data Structures, 20150178407, Jun 2015</a>",
+        "Native French and English speaker, reader, and writer",
+        "This resume can be found on GitHub: <a href=\"https://tristanstcyr.github.io/resume/\">https://tristanstcyr.github.io/resume/</a>"
+   ]
 };
