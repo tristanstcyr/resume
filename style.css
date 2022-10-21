@@ -14,6 +14,8 @@ p, ul {
     font-family: 'Roboto', sans-serif;
     color: rgb(30, 30, 30);
     font-size: 11pt;
+    -webkit-print-color-adjust: exact !important;
+		print-color-adjust: exact !important;
 }
 
 #header-top {
